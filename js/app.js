@@ -44,13 +44,11 @@ function showAnimals(pets) {
 			<div class="container">
 				<div class="col-6">
 					<h4>${pet.name.$t} (${pet.age.$t})</h4>
-					<p>${pet.breeds.breed.$t}</p>
+					${pet.breeds.breed.$t ? `<p>Breed: ${pet.breeds.breed.$t}</p>` : ``}
 					<p>${pet.contact.city.$t} ${pet.contact.state.$t} ${pet.contact.zip.$t}</p>
-					<ul>
-						${pet.contact.phone.$t ? `<p>Phone: ${pet.contact.phone.$t}<p>` : ``}
+						${pet.contact.phone.$t ? `<p>Phone: ${pet.contact.phone.$t}</p>` : ``}
 						${pet.contact.email.$t ? `<p>Email: ${pet.contact.email.$t}</p>` : ``}
 						<p>Shelter ID: ${pet.shelterId.$t}</p>
-					</ul>
 				</div>
 				<div class="col-6">
 				  <img src="${pet.media.photos.photo[3].$t}"/>

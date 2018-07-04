@@ -7,33 +7,16 @@
 *, *::before, *::after {
 	box-sizing: border-box;
 }
-.hero {
-	position: relative;
-}
 
-.hero .hero-img {
-	width: 100%;
-	max-width: 100%;
-	object-fit: cover;
-	object-position: top;
-}
-
-.hero .hero-text {
-	position: absolute;
-	transform: translateY(-50%);
-	top: 50%;
-	width: 100%;
-	text-align: center;
-}
-
-.hero-text h1 {
-	font-family: sans-serif;
-	text-transform: capitalize;
-	font-size: 3em;
+.search {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	vertical-align: center;
+	justify-content: center;
 }
 
 form {
-	margin: 0;
-	padding: 1em 3em;
-	background: red;
+	display: flex;
+	justify-content: center;
 }
