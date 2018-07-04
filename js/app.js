@@ -47,9 +47,9 @@ function showAnimals(pets) {
 					<p>${pet.breeds.breed.$t}</p>
 					<p>${pet.contact.city.$t} ${pet.contact.state.$t} ${pet.contact.zip.$t}</p>
 					<ul>
-						<li>Phone: ${pet.contact.phone.$t}</li>
-						${pet.contact.email.$t ? `<li>Email: ${pet.contact.email.$t}</li>` : ``}
-						<li>Shelter ID: ${pet.shelterId.$t}</li>
+						${pet.contact.phone.$t ? `<p>Phone: ${pet.contact.phone.$t}<p>` : ``}
+						${pet.contact.email.$t ? `<p>Email: ${pet.contact.email.$t}</p>` : ``}
+						<p>Shelter ID: ${pet.shelterId.$t}</p>
 					</ul>
 				</div>
 				<div class="col-6">

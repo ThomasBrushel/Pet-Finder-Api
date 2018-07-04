@@ -5,17 +5,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Find a pet</title>
 </head>
 
 <body>
+	<header>
+		
+	</header>
 	<div class="hero">
-		<img alt="">
+		<img class="hero-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1385789/header-giving_2048x2048.jpg" alt="">
 		<div class="hero-text">
-			<h1>Find A Pet Near You</h1>
+			<h1>Save an animal in need</h1>
 		</div>
 	</div>
-	<div class="container">
 		<form id="pet-form">
 			<label for="animal">Animal</label>
 			<select id="animal">
@@ -27,6 +30,7 @@
 			<input type="text" id="zip" placeholder="Enter your zipcode">
 			<input type="submit" value="find">
 		</form>
+	<div class="container">
 		<div id="results"></div>
 	</div>
 	<script src="js/app.js"></script>
