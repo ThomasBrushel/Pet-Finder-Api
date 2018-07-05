@@ -43,7 +43,7 @@ function showAnimals(pets) {
 				<div class="col-6">
 					<img src="${pet.media.photos.photo[3].$t}"/>
 					<div class="card-bottom">
-						<h2>${pet.name.$t} (${pet.age.$t})</h2>
+						<h3>${pet.name.$t} (${pet.age.$t})</h3>
 						${pet.breeds.breed.$t ? `<p>Breed: ${pet.breeds.breed.$t}</p>` : ``}
 						<p>${pet.contact.city.$t} ${pet.contact.state.$t} ${pet.contact.zip.$t}</p>
 							${pet.contact.phone.$t ? `<p>Phone: <a href="tel:${pet.contact.phone.$t}">${pet.contact.phone.$t}</a></p>` : ``}

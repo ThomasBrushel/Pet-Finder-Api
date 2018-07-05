@@ -90,6 +90,8 @@ img {
 
 .card-bottom {
 	margin-bottom: 1em;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	padding: 1em 2em;
 }
 
 @media(max-width: 768px) {
