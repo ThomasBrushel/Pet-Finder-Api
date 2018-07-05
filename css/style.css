@@ -44,13 +44,26 @@ img {
 	transform: translateY(0%);
 }
 
+.animal-label {
+	display: flex;
+	align-items: center;
+}
+
 #animal {
 	-webkit-appearance: none;
 	width: 25%;
 	margin-right: 1em;
+	margin-left: 1em;
 	background: transparent;
 	border-radius: 0;
 	padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-image: url(../images/chevron-down-solid.svg);
+	background-repeat: no-repeat;
+	background-position: 95% ;
+	background-size: .9em;
+	border: 1px solid #333;
 }
 
 .submit {
