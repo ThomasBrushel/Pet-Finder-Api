@@ -4,6 +4,7 @@ const petForm = document.querySelector("#pet-form");
 
 petForm.addEventListener("submit", fetchAnimals);
 
+
 function fetchAnimals(e) {
 	e.preventDefault();
 	//Get user input
@@ -16,10 +17,6 @@ function fetchAnimals(e) {
 		.then(res => res.json())
 		.then(data => showAnimals(data.petfinder.pets.pet))
 		.then(err => console.log(err));
-}
-
-function callback(data) {
-	console.log(data);
 }
 
 // Show Listings of pets
